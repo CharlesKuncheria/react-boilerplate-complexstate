@@ -1,0 +1,13 @@
+// As such, if you are using webpack 2, you most likely will want to configure Babel to transpile ES modules to CommonJS modules only in the test environment.
+
+{
+  "presets": [
+    ["es2015", {"modules": false}]
+  ],
+
+  "env": {
+    "test": {
+      "plugins": ["transform-es2015-modules-commonjs"]
+    }
+  }
+}
