@@ -13,6 +13,8 @@ export default class ItemsContainer extends Component {
     }
 
     componentDidMount() {
+        // we need to be smart about the changes we look for.
+        // this is where react-redux combine will help us.
         this.props.store.subscribe(this.handleChange)
     }
 
